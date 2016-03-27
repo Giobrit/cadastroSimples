@@ -1,7 +1,6 @@
 package br.com.cadastro.basico.pessoa;
 
 
-import br.com.cadastro.basico.endereco.Endereco;
 import br.com.cadastro.basico.endereco.EnderecoDTO;
 
 import java.io.Serializable;

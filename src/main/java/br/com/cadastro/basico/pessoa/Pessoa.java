@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PESSOA_GENERATOR")
-    @SequenceGenerator(name="PESSOA_GENERATOR", sequenceName="PESSOA_SEQUENCE", allocationSize=1, initialValue=0)
+    @SequenceGenerator(name = "PESSOA_GENERATOR", sequenceName = "PESSOA_SEQUENCE", allocationSize = 1, initialValue = 0)
     private Long id;
 
     @Column(name = "NOME")

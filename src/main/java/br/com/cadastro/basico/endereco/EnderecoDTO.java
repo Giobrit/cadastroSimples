@@ -5,7 +5,7 @@ import br.com.cadastro.basico.pessoa.PessoaDTO;
 import java.io.Serializable;
 import java.util.List;
 
-public class EnderecoDTO implements Serializable{
+public class EnderecoDTO implements Serializable {
     public Long id;
     public String rua;
     public String numero;
