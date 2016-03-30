@@ -1,0 +1,22 @@
+{
+  "name": "cadastro-simples",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Giobrit"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Giobrit/cadastroSimples",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "angular": "^1.5.3"
+  }
+}

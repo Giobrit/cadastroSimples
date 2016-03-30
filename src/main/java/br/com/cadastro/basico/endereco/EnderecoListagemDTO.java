@@ -4,9 +4,8 @@ import java.io.Serializable;
 
 public class EnderecoListagemDTO implements Serializable {
     private Long id;
-    private String nome;
-    private String enderecoRua;
-    private String enderecoNumero;
+    private String rua;
+    private String Numero;
 
     public Long getId() {
         return id;
@@ -16,27 +15,19 @@ public class EnderecoListagemDTO implements Serializable {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNumero() {
+        return Numero;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNumero(String numero) {
+        Numero = numero;
     }
 
-    public String getEnderecoRua() {
-        return enderecoRua;
+    public String getRua() {
+        return rua;
     }
 
-    public void setEnderecoRua(String enderecoRua) {
-        this.enderecoRua = enderecoRua;
-    }
-
-    public String getEnderecoNumero() {
-        return enderecoNumero;
-    }
-
-    public void setEnderecoNumero(String enderecoNumero) {
-        this.enderecoNumero = enderecoNumero;
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 }

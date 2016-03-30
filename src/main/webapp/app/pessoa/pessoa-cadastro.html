@@ -1,0 +1,55 @@
+<form class="pull-right col-md-12 col-sm-12 col-lg-12 col-xs-12" ng-init="init()">
+    <div class="panel">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="col-md-offset-4">
+                        <h4>Nome</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="col-md-offset-4">
+                        <div class="form-group">
+                            <input type="text" name="nome" placeholder="Informe o Nome" class="form-control"
+                                   ng-model="pessoa.nome"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="col-md-offset-4">
+                        <h4>Endereço</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="col-md-offset-4">
+                        <div class="form-group">
+                            <select class="form-control" ng-model="pessoa.endereco"
+                                    ng-options="endereco.rua for endereco in enderecos">
+                                <option>Selecione um endereço...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="pull-left">
+                        <a type="button" href="#/Pessoa/Listar" class="btn btn-danger">Cancelar</a>
+                        <button type="submit" ng-click="salvar()" ng-disabled=""
+                                class="btn btn-success">Salvar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
