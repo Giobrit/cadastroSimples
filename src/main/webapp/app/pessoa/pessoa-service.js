@@ -7,16 +7,11 @@
 
     return {
       
-      postPessoa: function(params){
-        return $http.post('/pessoa', null, params);
-      },
-
-      getPerfisFinanceiros: function(){
-      	return $http.get(API_URL + '/perfil-financeiro');
+      postPessoa: function(pessoa){
+        return $http.post( '/v1/pessoa', pessoa);
       }
-
     };
 
-  }]);
+  });
 
 })(angular);

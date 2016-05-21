@@ -36,6 +36,10 @@ public class PessoaService {
     }
 
     public Pessoa criarPessoa(Pessoa pessoa) {
+        Endereco endereco = enderecoService.localizarEndereco(pessoa.getEndereco().getId());
+
+        pessoa.setEndereco(endereco);
+
         return pessoaRepositorio.save(pessoa);
     }
 

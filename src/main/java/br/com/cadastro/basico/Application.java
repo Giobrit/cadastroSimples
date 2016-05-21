@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.Collection;
 import java.util.List;
 
 
@@ -28,8 +29,8 @@ public class Application {
 
             if (context.getDestinationType().equals(context.getParent().getDestinationType())) {
                 return false;
-            } else if (context.getDestinationType().equals(List.class) && ((List) context.getSource()).size() != 0) {
-                Object o = ((List) context.getSource()).get(0);
+            } else if (context.getSource() != null && context.getDestinationType().equals(List.class) && ((List) context.getSource()).size() != 0) {
+                Object o = ((List) context.getSource()).stream().findFirst();
 
                 return context.getParent().getDestinationType().equals(o.getClass());
             }
